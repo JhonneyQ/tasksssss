@@ -1,0 +1,9 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.all{
+    display: flex;
+    justify-content: space-around;
+}
