@@ -16,7 +16,7 @@ const add = document.querySelector(".add")
 //     .then((res)=>{
 //       console.log(res);
       
-// //     })
+//     })
 
 // async function getAllData() {
 //     try {
@@ -40,8 +40,8 @@ add.addEventListener("click", async function addd(){
     const c = prompt("body")
     const d = prompt("author")
     axios.post(`${BASE_URL}/${endpoints.blogs}`, {
-        id: = a
-        : 'Flintstone'
+        // id: = a
+        // : 'Flintstone'
       })
     
 })

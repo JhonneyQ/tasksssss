@@ -2,7 +2,7 @@
 
 export async function getAllData(){
     const res = await axios(`${BASE_URL}/${endpoints.blogs}`)
-    drawcards(res.data)
+    RTE
     
 }
 
