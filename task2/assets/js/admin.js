@@ -1,5 +1,6 @@
 const BASE_URL = "http://localhost:3000"
 
+
 const add = document.querySelector(".add")
 
 const endpoints = {
@@ -27,13 +28,22 @@ add.addEventListener("click" ,async function addd(){
 
 })
 
-
+function drawCat(arr){
+    selClass.innerHTML=""
+    arr.forEach(element => {
+        const classs = document.createElement("option")
+        classs.textContent = element.name
+        selClass.append(classs)
+    });
+}
 
 
 
 async function getAllData() {  
     const res = await axios(`${BASE_URL}/${endpoints.products}`);
+    const res2 = await axios(`${BASE_URL}/${endpoints.categories}`);
     drawcards(res.data);
+    drawCat(res2.data)
 
  
     
@@ -92,5 +102,15 @@ function drawcards(arr) {
         
     });
 }
+
+const selClass = document.querySelector(".select")
+
+// function drawCat(arr){
+//     selClass.innerHTML=""
+//     arr.forEach(element => {
+//         const classs = document.createElement("option")
+//         classs.textContent(`${element.name}`)
+//     });
+// }
 
 getAllData()
