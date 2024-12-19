@@ -32,7 +32,7 @@ const Cards = () => {
                 type="text"
                 placeholder="Search for a recipe"
                 value={search} // Controlled input, binds to the search state
-                onChange={(e) => setSearch(e.target.value.trim())} // Update search state on input change
+                onChange={(e) => setSearch(e.target.value)} // Update search state on input change
             />
             <Card products={filteredProducts} /> {/* Pass the filtered products to the Card component */}
         </div>
