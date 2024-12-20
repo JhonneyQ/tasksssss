@@ -1,0 +1,48 @@
+.header{
+    background-color: rgb(40, 41, 62);
+    padding: 20px;
+    list-style: none;
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        .all{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            .nav{
+                .ul{
+                    display: flex;
+                    gap: 40px;
+                    a{
+                        color: white;
+                    }
+                }
+            }
+            .button{
+                background-color: rgb(40, 41, 62);
+                color: white;
+                width: 130px;
+                height: 40px;
+                border-radius: 7px;
+                border: solid 1px white;
+            }
+        }
+
+    }
+}
+
+
+.main{
+    background-color: rgb(253, 240, 233);
+    section{
+        padding: 50px;
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        img{
+            width: 100%;
+        }
+    }
+    }
+}
