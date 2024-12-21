@@ -1,0 +1,9 @@
+.name{
+    width: 200px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+

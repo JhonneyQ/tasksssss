@@ -1,36 +1,24 @@
-import React, { PureComponent } from 'react'
+// import React, { PureComponent } from 'react'
 
+// export class Input extends PureComponent {
+//   render() {
 
-export class Input extends PureComponent {
-  render() {
+//     const submit = (e) =>{
+//         e.preventDefault();
 
-    // const [studentName, setStudentName] = useState("");
-    // const [gpa, setGpa] = useState(0);
-    // const [faculty, setFaculty] = useState("");
-
-    // const submit = (e) =>{
-    //     e.preventDefault();
-    //     const student = {
-    //       studentName,
-    //       gpa,
-    //       faculty,
-    //     };
-
-    //     setStudents([...students, student]);
         
-    // }
+//     }
 
 
-    return (
-      <form className='input' onSubmit={submit}>
-        <input type='text' placeholder='name' id='name'/>
-        <input type='number' placeholder='gpa' id='gpa'/>
-        <input type='text' placeholder='faculty' id='faculty'/>
+//     return (
+//       <form className='input' onSubmit={submit}>
+//         <input type='text' placeholder='name' id='name'/>
+//         <input type='number' placeholder='gpa' id='gpga'/>
+//         <input type='text' placeholder='faculty' id='faculty'/>
+//       </form>
+//     )
+//   }
+// }
 
-      </form>
-    )
-  }
-}
-
-export default Input
+// export default Input
 
