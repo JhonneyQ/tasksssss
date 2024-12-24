@@ -11,6 +11,9 @@ import Footer from "./layouts/user/footer";
 import ClientLayout from "./components/client/ClientLayout";
 import AdminLayout from "./components/admin/AdminLayout";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Add from "./pages/admin/add";
+import Dashboard from "./pages/admin/dashboard";
+import Edit from "./pages/admin/edit";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,9 +28,12 @@ function App() {
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/products" element={<Products />} />
         </Route>
+
+        //admin
         <Route path="/admin" element={<AdminLayout/>}>
-          {/* <Route index element={<Home />} /> */}
-       
+          <Route index element={<Dashboard />} />
+          <Route path="add" element={<Add/>} />
+          <Route path="edit" element={<Edit />} />
         </Route>
       </Routes>
       <Footer />
