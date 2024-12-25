@@ -25,6 +25,7 @@ const Header = () => {
                     </li>
                 </ul>
             </nav>
+            <button>contact</button>
         </div>
     </header>
   )

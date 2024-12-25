@@ -15,12 +15,12 @@ const HeaderA = () => {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/edit">
+                        <NavLink to="edit">
                             edit
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/add">
+                        <NavLink to="add">
                             add
                         </NavLink>
                     </li>
