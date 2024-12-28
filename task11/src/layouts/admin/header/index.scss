@@ -1,0 +1,16 @@
+header{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    nav{
+        ul{
+            display: flex;
+            gap: 25px;
+            li{
+                text-decoration: none;  
+                list-style: none;
+            }
+        }
+    }
+}
