@@ -11,6 +11,7 @@ import Adminn from './components/admin'
 import Dashboard from './pages/admin/dashboard'
 import Ad from './pages/admin/mian'
 import Details from './pages/client/details/inedex'
+import Basket from './pages/client/basket'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,6 +27,7 @@ function App() {
             <Route path=':id' element={<Details/>}/>
           </Route>
           <Route path="Favorite" element={<Favorites />} />
+          <Route path="Basket" element={<Basket />} />
         </Route>
         <Route path="/admin" element={<Adminn />}>
           <Route index element={<Ad/>} />

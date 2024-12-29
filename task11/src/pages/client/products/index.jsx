@@ -9,6 +9,7 @@ import { FaRegHeart } from "react-icons/fa6";
 import "./index.scss"
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import { BasketContext } from '../../../context/index2';
 
 
 const Products = () => {
@@ -16,6 +17,7 @@ const Products = () => {
     const { toggleFavorites, favorites } = useContext(FavoritesContext)
     const [search, setSearch] = useState("")
     const [category, setCategory] = useState("All")
+    const { addToBasket } = useContext(BasketContext)
     const getAlldata = async () => {
         try {
             const res = await axios("http://localhost:3000/categories")
@@ -55,6 +57,7 @@ const Products = () => {
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                 />
+                
                 <select onChange={(e) => setCategory(e.target.value)} >
                     <option value={"All"}>All</option>
                     <option value={"men's clothing"}>men's clothing</option>
@@ -71,6 +74,7 @@ const Products = () => {
                                 {favorites.find((q) => q.id === p.id) ? <FaHeart /> : <FaRegHeart />}
                             </button>
                             <Link to={`${p.id}`}>{p.title}</Link>
+                            <button onClick={()=>addToBasket(p)}>add basket</button>
                         </div>
                     ))}
                 </div>
