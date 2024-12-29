@@ -15,7 +15,7 @@ const BasketProvider = ({ children }) => {
             const idx = Baskett.findIndex((q) => q.id === product.id)
 
             if (idx === -1) {
-                return [...Baskett, { product, quantity: 1 }]
+                return [...Baskett, { ...product, quantity: 1 }]
             }
 
             Baskett[idx].quantity++

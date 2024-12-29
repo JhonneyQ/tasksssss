@@ -3,13 +3,14 @@ import { BasketContext } from '../../../context/index2';
 
 
 
-const Dashboard = () => {
+const Basket = () => {
 
     const { basket, removeBasketItem, increaseBasketCount, decreaseBasketCount, clearBasket, calculateTotalPrice } = useContext(BasketContext)
 
     console.log(basket);
     return (
         <div className='container'>
+            <h2>{calculateTotalPrice()}</h2>
 
             {/* <table>
                 <thead>
@@ -39,6 +40,11 @@ const Dashboard = () => {
                     <div className='card' key={p.id}>
                         <h3>{p.title}</h3>
                         <p>{p.description}</p>
+                        <button onClick={()=>removeBasketItem(p)}>remove</button>
+                        <button onClick={()=>increaseBasketCount(p)}>+</button>
+                        <p>{p.quantity}</p>
+                        <button onClick={()=>decreaseBasketCount(p)}>-</button>
+                        <p>{p.price*p.quantity}</p>
                     </div>
                 ))}
             </div>
@@ -49,4 +55,4 @@ const Dashboard = () => {
     );
 };
 
-export default Dashboard;
+export default Basket;
