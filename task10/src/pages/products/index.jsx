@@ -8,6 +8,7 @@ import { FavoritesContext } from '../../context';
 const Product = () => {
     const [cards, setCards] = useState([]);
     const { toggleFavorites, favorites } = useContext(FavoritesContext)
+    const [search, setSearch] = useState("");
 
     const getAllDaata = async () => {
         try {
