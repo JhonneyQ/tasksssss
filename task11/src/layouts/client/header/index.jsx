@@ -30,6 +30,11 @@ const Header = () => {
                         favorites
                     </NavLink>
                 </li>
+                <li>
+                    <NavLink to="/Basket">
+                        basket
+                    </NavLink>
+                </li>
             </ul>
         </nav>
     </header>
